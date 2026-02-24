@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TMC Events - Upcoming workshops, speaker events, networking sessions, and past event highlights at Kelley School of Business.">
+  <title>Events | TMC - Technology Management Club</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/TMC_Logo.png" type="image/png">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="TMC Home">
+        <img src="images/TMC_Logo_nobg.png" alt="TMC Logo">
+        <div class="header__logo-text">
+          TMC
+          <span>Technology Management Club</span>
+        </div>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="events.html" class="nav__link active">Events</a></li>
+          <li><a href="join.html" class="nav__link nav__cta btn btn--primary btn--sm">Join TMC</a></li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </div>
+  </header>
+
+  <!-- ============ UPCOMING EVENTS - TIMELINE ============ -->
+  <section class="section timeline-section" id="main-content">
+    <div class="container">
+
+      <div class="animate-on-scroll">
+        <span class="section-label">This Semester</span>
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-subtitle">From industry speakers to hands-on workshops, discover what's happening at TMC this semester and beyond.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar animate-on-scroll" id="eventFilters" role="tablist" aria-label="Filter events by type">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Events</button>
+        <button class="filter-btn" data-filter="professional-development" role="tab" aria-selected="false">Professional Development</button>
+        <button class="filter-btn" data-filter="technology-committee" role="tab" aria-selected="false">Technology Committee</button>
+      </div>
+
+      <!-- Download All Calendar Invites -->
+      <div class="animate-on-scroll" style="display: flex; justify-content: flex-end; margin: var(--space-5) 0 var(--space-7);">
+        <button class="timeline__download-btn" id="downloadAllCal" aria-label="Download all upcoming events as a single calendar file">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:15px;height:15px;flex-shrink:0;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+          Download All Calendar Invites
+        </button>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline" id="timelineContainer">
+        <!-- Static background line -->
+        <div class="timeline__line" aria-hidden="true"></div>
+        <!-- Scroll-driven progress line -->
+        <div class="timeline__progress" id="timelineProgress" aria-hidden="true"></div>
+
+        <!-- Events List -->
+        <div id="eventsList">
+
+          <!-- Professional Development: Tech Careers – Feb 11 -->
+          <div class="timeline__item event-card" data-type="professional-development">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">FEB</span>
+                    <span class="timeline__date-day">11</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--professional-development">Professional Development</span>
+                    <h4 class="timeline__card-title">Tech Careers</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--professional-development" data-event-title="Tech Careers" data-event-date="20260211" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add Tech Careers to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Committee: AI in Business – Feb 18 -->
+          <div class="timeline__item event-card" data-type="technology-committee">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">FEB</span>
+                    <span class="timeline__date-day">18</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--technology-committee">Technology Committee</span>
+                    <h4 class="timeline__card-title">AI in Business</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--technology-committee" data-event-title="AI in Business" data-event-date="20260218" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add AI in Business to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Development: Tech Interviews – Mar 4 -->
+          <div class="timeline__item event-card" data-type="professional-development">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">MAR</span>
+                    <span class="timeline__date-day">04</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--professional-development">Professional Development</span>
+                    <h4 class="timeline__card-title">Tech Interviews Event</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--professional-development" data-event-title="Tech Interviews Event" data-event-date="20260304" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add Tech Interviews Event to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Committee: Data Analytics – Apr 1 -->
+          <div class="timeline__item event-card" data-type="technology-committee">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">APR</span>
+                    <span class="timeline__date-day">01</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--technology-committee">Technology Committee</span>
+                    <h4 class="timeline__card-title">Data Analytics</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--technology-committee" data-event-title="Data Analytics" data-event-date="20260401" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add Data Analytics to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Committee: Product Management – Apr 15 -->
+          <div class="timeline__item event-card" data-type="technology-committee">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">APR</span>
+                    <span class="timeline__date-day">15</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--technology-committee">Technology Committee</span>
+                    <h4 class="timeline__card-title">Product Management</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--technology-committee" data-event-title="Product Management" data-event-date="20260415" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add Product Management to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Development: Skills & Projects – Apr 29 -->
+          <div class="timeline__item event-card" data-type="professional-development">
+            <div class="timeline__node" aria-hidden="true">
+              <div class="timeline__dot"><div class="timeline__dot-ring"></div></div>
+            </div>
+            <div class="timeline__card-wrapper">
+              <div class="timeline__card">
+                <div class="timeline__card-header">
+                  <div class="timeline__date-box">
+                    <span class="timeline__date-month">APR</span>
+                    <span class="timeline__date-day">29</span>
+                  </div>
+                  <div class="timeline__card-info">
+                    <span class="timeline__tag timeline__tag--professional-development">Professional Development</span>
+                    <h4 class="timeline__card-title">Skills &amp; Projects Event</h4>
+                  </div>
+                </div>
+                <div class="timeline__card-meta">
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    8:00 PM
+                  </span>
+                  <span class="timeline__meta-item">
+                    <svg class="timeline__meta-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    SPEA 272
+                  </span>
+                </div>
+                <div class="timeline__card-actions">
+                  <button class="timeline__add-cal-btn add-to-cal timeline__add-cal-btn--professional-development" data-event-title="Skills &amp; Projects Event" data-event-date="20260429" data-event-time="2000" data-event-location="SPEA 272" aria-label="Add Skills & Projects Event to calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:14px;height:14px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    Add to Cal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /#eventsList -->
+
+        <!-- Empty state -->
+        <div id="noEvents" style="display: none; text-align: center; padding: var(--space-10) 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:48px;height:48px;color:rgba(255,255,255,0.25);margin:0 auto var(--space-4);">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+          </svg>
+          <p style="color:rgba(255,255,255,0.4);font-size:var(--text-base);">No upcoming events in this category. Check back soon!</p>
+        </div>
+
+      </div><!-- /.timeline -->
+    </div>
+  </section>
+
+  <!-- ============ PAST EVENTS ============ -->
+  <section class="section section--alt" id="past-events">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <h2 class="section-title">Past Events</h2>
+      </div>
+
+      <!-- Past Event Gallery -->
+      <!-- [UPDATE: Replace placeholder images with actual event photos] -->
+      <div id="pastEventsGrid" class="grid grid--3" style="margin-top: var(--space-7);">
+
+        <div class="past-event animate-on-scroll stagger-1">
+          <img class="past-event__image" src="images/Past Events/Tech_Careers.jpg" alt="Tech Careers" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">Tech Careers</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-2">
+          <img class="past-event__image" src="images/Past Events/TMC_Case_Competition.jpg" alt="TMC Case Competition Fall 2025" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">TMC Case Competition</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-3">
+          <img class="past-event__image" src="images/Past Events/AI_Agents_Workshop.jpg" alt="AI Agents Workshop Fall 2025" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">AI Agents Workshop</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-2">
+          <img class="past-event__image" src="images/Past Events/Technology_Workshop_Night.jpg" alt="Kelley Technology Workshop Night Fall 2025" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">Kelley Technology Workshop Night</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-3">
+          <img class="past-event__image" src="images/Past Events/Gen_AI.jpg" alt="The Future of AI and Coding Fall 2025" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">The Future of AI &amp; Coding</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-1">
+          <img class="past-event__image" src="images/Past Events/Resume_Workshop.jpg" alt="Resume Workshop Fall 2025" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">Resume Workshop</h4>
+            <span class="past-event__date">Fall 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-1">
+          <img class="past-event__image" src="images/Past Events/TMC_LCA_Case_Comp.jpg" alt="Spring 2025 TMC x Luddy Consulting Association Case Competition" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">TMC x Luddy Consulting Association Case Competition</h4>
+            <span class="past-event__date">Spring 2025</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-2">
+          <img class="past-event__image" src="images/Past Events/Product_Management.jpg" alt="Product Management event" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">Product Management</h4>
+            <span class="past-event__date">Fall 2024</span>
+          </div>
+        </div>
+
+        <div class="past-event animate-on-scroll stagger-3">
+          <img class="past-event__image" src="images/Past Events/Cybersecurity.jpg" alt="Cybersecurity Event with EY and PWC" loading="lazy">
+          <div class="past-event__overlay">
+            <h4 class="past-event__title">Cybersecurity Event</h4>
+            <span class="past-event__date">Fall 2024</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/TMC_Logo.png" alt="Technology Management Club logo">
+            <span class="footer__logo-text">Technology Management Club</span>
+          </div>
+          <p class="footer__description">Kelley School of Business's leading organization for students passionate about technology and its role in shaping modern business.</p>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-inner">
+            <h4 class="footer__heading">Contact</h4>
+            <ul class="footer__links">
+            <li>
+              <a href="mailto:tmcindianauniversity@gmail.com" class="footer__contact-link">
+                <span class="footer__contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+                </span>
+                tmcindianauniversity@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tmc.iu" target="_blank" rel="noopener noreferrer" class="footer__contact-link">
+                <span class="footer__contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </span>
+                @tmc.iu
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

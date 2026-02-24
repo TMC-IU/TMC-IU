@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the Technology Management Club at IU Kelley School of Business - our mission, values, leadership team, and what we do.">
+  <title>About | TMC - Technology Management Club</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/TMC_Logo.png" type="image/png">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="TMC Home">
+        <img src="images/TMC_Logo_nobg.png" alt="TMC Logo">
+        <div class="header__logo-text">
+          TMC
+          <span>Technology Management Club</span>
+        </div>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link active">About</a></li>
+          <li><a href="events.html" class="nav__link">Events</a></li>
+          <li><a href="join.html" class="nav__link nav__cta btn btn--primary btn--sm">Join TMC</a></li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE BANNER ============ -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="page-banner__content">
+        <div class="page-banner__label">About TMC</div>
+        <h1 class="page-banner__title">Shaping the Future of Business Through Technology</h1>
+        <p class="page-banner__subtitle">
+          We are Indiana University's leading student organization at the intersection of technology and business, empowering the next generation of tech leaders.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION & VALUES ============ -->
+  <section class="section" id="main-content">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="text-align: left; max-width: none; margin-bottom: var(--space-6);">
+        <span class="section-header__label">Our Mission</span>
+        <h2 class="section-header__title">Explore. Connect. Lead.</h2>
+        <div class="section-header__accent" style="margin-left: 0;"></div>
+      </div>
+      <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-10); align-items: center;">
+        <div class="animate-on-scroll">
+          <p>
+            The Technology Management Club at Indiana University is the Kelley School of Business's leading organization for students passionate about technology and its role in shaping modern business.
+          </p>
+          <p>
+            Our mission is to explore emerging tech trends, cultivate leadership skills, and help members grow professionally in tech-driven industries.
+          </p>
+          <p>
+            TMC is open to students of all majors and experience levels who are curious about the intersection of business and technology. Our membership continues to grow each semester as we build a supportive, innovative, and collaborative community.
+          </p>
+        </div>
+        <div class="animate-on-scroll stagger-2" style="position: relative;">
+          <!-- [UPDATE: Replace with actual club photo from Google Drive] -->
+          <img src="images/group_photo.jpg" alt="TMC group photo" style="border-radius: var(--radius-lg); width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE DO ============ -->
+  <section class="section section--blue">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          TMC hosts a diverse range of activities designed to build skills, expand networks, and create lasting connections.
+        </p>
+      </div>
+
+      <div class="grid grid--2" style="margin-top: var(--space-8);">
+        
+        <!-- Guest Speakers -->
+        <div class="event-card animate-on-scroll stagger-1">
+          <div class="event-card__icon-box">
+            <svg class="icon-speaker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width:64px;height:64px;">
+              <!-- Person / Speaker -->
+              <circle cx="24" cy="16" r="8" fill="var(--color-blue-dark)" />
+              <path d="M10,40 C10,30 18,26 24,26 C30,26 38,30 38,40 Z" fill="var(--color-blue)" />
+              <!-- Glowing Soundwaves (Hidden by default, shown on hover) -->
+              <path class="soundwave sw-inner-left" d="M12,24 Q8,16 12,8" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" stroke-linecap="round" />
+              <path class="soundwave sw-outer-left" d="M6,28 Q0,16 6,4" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" stroke-linecap="round" />
+              <path class="soundwave sw-inner-right" d="M36,24 Q40,16 36,8" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" stroke-linecap="round" />
+              <path class="soundwave sw-outer-right" d="M42,28 Q48,16 42,4" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="event-card__content">
+            <h4 class="event-card__title">Guest Speaker Events</h4>
+            <p class="event-card__description">Industry professionals share insights on technology strategy, consulting, product management, and career development.</p>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="event-card animate-on-scroll stagger-2">
+          <div class="event-card__icon-box">
+            <svg class="icon-network" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width:64px;height:64px;">
+              <!-- Connecting Lines (Animated on hover) -->
+              <path class="net-line nl-1" d="M24,24 L12,14" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <path class="net-line nl-2" d="M24,24 L36,14" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <path class="net-line nl-3" d="M24,24 L16,36" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <path class="net-line nl-4" d="M24,24 L32,36" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <path class="net-line nl-5" d="M12,14 L36,14" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <path class="net-line nl-6" d="M16,36 L32,36" fill="none" stroke="var(--color-blue-muted)" stroke-width="2" />
+              <!-- Nodes -->
+              <circle class="net-node center-node" cx="24" cy="24" r="6" fill="var(--color-blue-dark)" />
+              <circle class="net-node outer-node on-1" cx="12" cy="14" r="4" fill="var(--color-blue)" />
+              <circle class="net-node outer-node on-2" cx="36" cy="14" r="4" fill="var(--color-blue)" />
+              <circle class="net-node outer-node on-3" cx="16" cy="36" r="4" fill="var(--color-blue)" />
+              <circle class="net-node outer-node on-4" cx="32" cy="36" r="4" fill="var(--color-blue)" />
+            </svg>
+          </div>
+          <div class="event-card__content">
+            <h4 class="event-card__title">Networking Sessions</h4>
+            <p class="event-card__description">Curated opportunities to connect with peers, alumni, and employers from leading technology and consulting firms.</p>
+          </div>
+        </div>
+
+        <!-- Workshops -->
+        <div class="event-card animate-on-scroll stagger-3">
+          <div class="event-card__icon-box">
+            <svg class="icon-workshop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width:64px;height:64px;">
+              <!-- Laptop Base -->
+              <path class="laptop-base" d="M6,36 L42,36 L44,40 L4,40 Z" fill="var(--color-blue-dark)" />
+              <rect class="laptop-screen" x="10" y="16" width="28" height="20" rx="2" fill="none" stroke="var(--color-blue)" stroke-width="3" />
+              <!-- Rising Bar Charts (Animated on hover) -->
+              <rect class="bar-chart bc-1" x="14" y="24" width="5" height="10" fill="var(--color-blue-muted)" />
+              <rect class="bar-chart bc-2" x="21" y="28" width="5" height="6" fill="var(--color-blue)" />
+              <rect class="bar-chart bc-3" x="28" y="20" width="5" height="14" fill="var(--color-blue-dark)" />
+            </svg>
+          </div>
+          <div class="event-card__content">
+            <h4 class="event-card__title">Interactive Workshops</h4>
+            <p class="event-card__description">Hands-on workshops covering everything from coding to business analytics to data visualizations.</p>
+          </div>
+        </div>
+
+        <!-- Professional Growth -->
+        <div class="event-card animate-on-scroll stagger-4">
+          <div class="event-card__icon-box">
+            <svg class="icon-growth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width:64px;height:64px;">
+              <!-- Base/Pot -->
+              <path class="growth-base" d="M16,36 L32,36 L30,44 L18,44 Z" fill="var(--color-blue-dark)" />
+              <rect class="growth-rim" x="14" y="32" width="20" height="4" rx="1" fill="var(--color-blue)" />
+              <!-- Stem -->
+              <line class="growth-stem" x1="24" y1="32" x2="24" y2="8" stroke="var(--color-blue)" stroke-width="3" stroke-linecap="round" />
+              <!-- Base Leaves (visible initially) -->
+              <path class="growth-leaf gl-base-left" d="M24,28 Q14,28 14,18 Q24,18 24,28 Z" fill="var(--color-blue-muted)" />
+              <path class="growth-leaf gl-base-right" d="M24,22 Q34,22 34,12 Q24,12 24,22 Z" fill="var(--color-blue)" />
+              <!-- New Leaves (grow on hover) -->
+              <path class="growth-leaf gl-new-left" d="M24,16 Q16,16 16,8 Q24,8 24,16 Z" fill="var(--color-blue-dark)" />
+              <path class="growth-leaf gl-new-right" d="M24,10 Q32,10 32,2 Q24,2 24,10 Z" fill="var(--color-blue-muted)" />
+            </svg>
+          </div>
+          <div class="event-card__content">
+            <h4 class="event-card__title">Professional Growth</h4>
+            <p class="event-card__description">Dedicated resources, from resume reviews and project building workshops, to mock interviews and case prep designed to accelerate career readiness at the intersection of technology and business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXECUTIVE BOARD ============ -->
+  <section class="section section--alt" id="exec-board">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Leadership</span>
+        <h2 class="section-header__title">Executive Board</h2>
+        <div class="section-header__accent"></div>
+      </div>
+
+      <!-- [UPDATE: Replace placeholder names, titles, and photos with actual exec board info] -->
+      <div class="exec-board__presidents grid grid--2" style="margin-top: var(--space-8);">
+        <a href="https://www.linkedin.com/in/tomvdsteinen/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-1" aria-label="Tom von den Steinen on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/tom_von_den_steinen.jpg" alt="Tom von den Steinen">
+          <h4 class="exec-card__name">Tom von den Steinen</h4>
+          <p class="exec-card__title">Co-President</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Information Systems, Business Analytics & Data Science</p>
+            <p class="exec-card__class">Class of 2027</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sanjana-reddy-solipuram-ksb/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-2" aria-label="Sanjana Solipuram on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/sanjana_solipuram.jpg" alt="Sanjana Solipuram">
+          <h4 class="exec-card__name">Sanjana Solipuram</h4>
+          <p class="exec-card__title">Co-President</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Information Systems & Political Science, Philosophy, and Economics</p>
+            <p class="exec-card__class">Class of 2027</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="exec-board__vps grid grid--5" style="margin-top: var(--space-8);">
+        <a href="https://www.linkedin.com/in/nickvirelli/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-3" aria-label="Nick Virelli on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/nick_virelli.jpg" alt="Nick Virelli">
+          <h4 class="exec-card__name">Nick Virelli</h4>
+          <p class="exec-card__title">VP of Professional Development</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Information Systems, Business Analytics, and International Business</p>
+            <p class="exec-card__class">Class of 2026</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/masonpcaldwell/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-4" aria-label="Mason Caldwell on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/mason_caldwell.jpg" alt="Mason Caldwell">
+          <h4 class="exec-card__name">Mason Caldwell</h4>
+          <p class="exec-card__title">VP of Technology</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Information Systems & Business Analytics</p>
+            <p class="exec-card__class">Class of 2028</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/nicole-nguyenn/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-5" aria-label="Nicole Nguyen on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/nicole_nguyen.jpg" alt="Nicole Nguyen">
+          <h4 class="exec-card__name">Nicole Nguyen</h4>
+          <p class="exec-card__title">VP of Marketing & Membership</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Information Systems and Business Analytics</p>
+            <p class="exec-card__class">Class of 2028</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kavyasinghin/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-6" aria-label="Kavya Singh on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/Kavya_singh.jpg" alt="Kavya Singh">
+          <h4 class="exec-card__name">Kavya Singh</h4>
+          <p class="exec-card__title">VP of Outreach</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Finance & Informatics</p>
+            <p class="exec-card__class">Class of 2028</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/shjagan/" target="_blank" rel="noopener noreferrer" class="exec-card animate-on-scroll stagger-7" aria-label="Shiva Jaganathan on LinkedIn">
+          <img class="exec-card__photo" src="images/Headshots/shiva_jaganathan.jpg" alt="Shiva Jaganathan">
+          <h4 class="exec-card__name">Shiva Jaganathan</h4>
+          <p class="exec-card__title">VP of Finance</p>
+          <div class="exec-card__info">
+            <p class="exec-card__bio">Accounting and Business Analytics</p>
+            <p class="exec-card__class">Class of 2028</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STUDENT LEADERSHIP ============ -->
+  <section class="section student-leadership" id="student-leadership">
+    <div class="container">
+      <div class="sl-header animate-on-scroll">
+        <span class="sl-label">Get Involved</span>
+        <h2 class="sl-title">Student Leadership</h2>
+        <p class="sl-subtitle">At TMC, we believe in empowering our members to lead from day one. Hands-on leadership opportunities through our committee structure give you early experience that sets you apart.</p>
+        <div class="sl-accent-line"></div>
+      </div>
+
+      <div class="sl-featured">
+        <div class="sl-featured-card animate-on-scroll stagger-1">
+          <div class="sl-featured-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" /></svg>
+          </div>
+          <h3 class="sl-featured-title">Technology Committees</h3>
+          <span class="sl-featured-badge">3 per semester</span>
+          <p class="sl-featured-tagline">Present. Research. Connect.</p>
+          <p class="sl-featured-desc">Work on engaging informational presentations while connecting with industry professionals. Each semester features three unique tech-focused committees tackling real-world business technology topics.</p>
+          <ul class="sl-featured-tags" aria-label="Technology committees this semester">
+            <li>AI in Business</li>
+            <li>Data Analytics</li>
+            <li>Product Management</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="sl-divider-label">Operational Committees</p>
+      <div class="sl-grid">
+        <article class="sl-card animate-on-scroll stagger-2">
+          <h4 class="sl-card-title">Finance Committee</h4>
+          <p class="sl-card-desc">Manage TMC's budget, financial planning, and resource allocation. Gain practical experience in organizational finance.</p>
+        </article>
+        <article class="sl-card animate-on-scroll stagger-3">
+          <h4 class="sl-card-title">Outreach &amp; Corporate Relations</h4>
+          <p class="sl-card-desc">Build relationships with industry partners, coordinate speakers, and create networking opportunities.</p>
+        </article>
+        <article class="sl-card animate-on-scroll stagger-4">
+          <h4 class="sl-card-title">Professional Development</h4>
+          <p class="sl-card-desc">Design workshops, speaker series, and skill-building events that prepare members for tech consulting and management careers.</p>
+        </article>
+        <article class="sl-card animate-on-scroll stagger-5">
+          <h4 class="sl-card-title">Marketing &amp; Membership</h4>
+          <p class="sl-card-desc">Shape TMC's brand, manage social media, and drive engagement. Learn digital marketing and community building.</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Why Lead at TMC callout -->
+    <div class="committee-callout animate-on-scroll" style="margin-top: var(--space-10);">
+      <div class="container">
+        <div class="committee-callout__inner">
+          <div class="committee-callout__content">
+            <h3 class="committee-callout__title">Why Lead at TMC?</h3>
+            <p class="committee-callout__text">
+              As a committee director or member, you'll gain real leadership experience that consulting firms and tech companies value: managing teams, driving projects to completion, and making strategic decisions. Our committee structure provides the perfect balance of autonomy and mentorship, allowing you to lead with impact while developing skills that will serve you throughout your career.
+            </p>
+            <a href="join.html" class="btn btn--white btn--lg">Get Involved</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/TMC_Logo.png" alt="Technology Management Club logo">
+            <span class="footer__logo-text">Technology Management Club</span>
+          </div>
+          <p class="footer__description">Kelley School of Business's leading organization for students passionate about technology and its role in shaping modern business.</p>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-inner">
+            <h4 class="footer__heading">Contact</h4>
+            <ul class="footer__links">
+            <li>
+              <a href="mailto:tmcindianauniversity@gmail.com" class="footer__contact-link">
+                <span class="footer__contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+                </span>
+                tmcindianauniversity@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tmc.iu" target="_blank" rel="noopener noreferrer" class="footer__contact-link">
+                <span class="footer__contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </span>
+                @tmc.iu
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
